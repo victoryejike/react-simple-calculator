@@ -7,7 +7,8 @@ export default function App() {
   const [inputValue, setInputValue] = useState("");
 
   const handleClick = (btnValue) => {
-    setInputValue(btnValue);
+    const displayNumber = inputValue.concat(btnValue);
+    setInputValue(displayNumber);
   };
 
   const renderCalcButtons = (btnValue) => {
