@@ -1,6 +1,9 @@
 import React from "react";
 
 const CalculatorDisplay = ({ calcDisplay }) => {
+  const inputStyle = {
+    resize: "none"
+  };
   return (
     <>
       <textarea
@@ -9,6 +12,7 @@ const CalculatorDisplay = ({ calcDisplay }) => {
         id="calcInputValue"
         type="number"
         defaultValue={calcDisplay}
+        style={inputStyle}
       />
     </>
   );
