@@ -1,16 +1,15 @@
 import React from "react";
 
 const CalculatorDisplay = ({ calcDisplay }) => {
-  const displayStyle = {
-    border: "1px solid black",
-    height: "30px",
-    width: "130px"
-  };
   return (
     <>
-      <div type="number" style={displayStyle}>
-        {calcDisplay}
-      </div>
+      <textarea
+        rows="3"
+        cols="28"
+        id="calcInputValue"
+        type="number"
+        defaultValue={calcDisplay}
+      />
     </>
   );
 };

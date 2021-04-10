@@ -11,7 +11,12 @@ export default function App() {
   };
 
   const renderCalcButtons = (btnValue) => {
-    return <CalculatorButtons value={btnValue} onClick={handleClick} />;
+    return (
+      <CalculatorButtons
+        value={btnValue}
+        onClick={() => handleClick(btnValue)}
+      />
+    );
   };
 
   return (
