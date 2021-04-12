@@ -31,6 +31,7 @@ export default function App() {
 
   const handleClearClick = () => {
     setInputValue("");
+    setAnswer(0);
   };
 
   return (
